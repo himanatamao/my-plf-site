@@ -1,0 +1,76 @@
+h1 {
+  font-size: 0px;
+}
+.暇人たまお {
+ text-align: center;
+ width: auto;
+ height: auto;
+ margin-top: 270px;
+}
+.公式サイト {
+  text-align: center;
+}
+.WELCOME {
+  text-align: center;
+  font-size: 48px;
+  font-family: Ricty Diminished;
+  margin-top: 600px;
+}
+.皆さんこんにちは {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 28px;
+  font-family: Meiryo;
+}
+.挿絵1 {
+  text-align: center;
+}
+.ABOUT {
+  text-align: center;
+  font-size: 48px;
+  font-family: Ricty Diminished;
+  margin-top: 600px;
+}
+.自己紹介 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 28px;
+  font-family: Meiryo;
+}
+.LINKS {
+  text-align: center;
+  font-size: 48px;
+  font-family: Ricty Diminished;
+  margin-top: 600px;
+}
+.リンク集 {
+  text-align: center;
+}
+.icon1 {
+  margin: 0px 0px 330px 0px;
+  width: 95px;
+  height: auto;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #FAFAFA;
+}
+.icon2 {
+  margin: 100px 200px 330px 200px;
+  width: 95px;
+  height: auto;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #FAFAFA;
+}
+.icon3 {
+  margin: 0px 0px 330px 0px;
+  width: 95px;
+  height: auto;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #FAFAFA;
+}
+.コピーライト {
+  text-align: center;
+  font-family: Meiryo;
+}
