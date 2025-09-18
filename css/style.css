@@ -6,6 +6,11 @@ html {
   line-height: 1.5rem;
   color: #333;
 }
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 100%;
+  }
+}
 
 img {
   max-width: 100%;
@@ -28,13 +33,13 @@ a {
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
-  line-height: 2em;
+  margin-bottom: 50px;
   font-size: 2rem;
 }
 
 .wrapper {
   max-width: 980px;
-  padding: 0 5%;
+  padding: 0 10%;
   margin: 0 auto;
   text-align: center;
 }
@@ -68,10 +73,13 @@ a {
   flex-direction: column;
   justify-content: center;
 }
+#aboutMe li {
+  margin: 1em 0;
+}
 
 /* footer */
 #wrapperLink {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,16 +87,41 @@ a {
 #wrapperLink h2 {
   margin-bottom: 60px;
 }
+@media screen and (max-width: 750px) {
+  #wrapperLink h2 {
+    margin-bottom: 50px;
+  }
+}
 #wrapperLink #link {
   display: flex;
   justify-content: space-around;
+}
+@media screen and (max-width: 750px) {
+  #wrapperLink #link {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 #wrapperLink #link li {
   width: 150px;
   padding: 30px;
   background-color: #fafafa;
   border-radius: 50%;
+  margin-right: 20px;
+  transition-property: opacity;
   transition-duration: 0.2s;
+}
+@media screen and (max-width: 750px) {
+  #wrapperLink #link li {
+    margin-right: 0;
+    margin-bottom: 50px;
+    width: 110px;
+    padding: 20px;
+  }
+}
+#wrapperLink #link li:last-child {
+  margin-right: 0;
 }
 #wrapperLink #link li:hover {
   opacity: 0.5;

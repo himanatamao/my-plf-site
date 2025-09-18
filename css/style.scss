@@ -1,6 +1,12 @@
 /* var */
-@mixin sectionSize {
-    height: 100vh;
+@mixin sp {
+    @media screen and (max-width: 750px) {
+        @content
+    }
+}
+
+@mixin sectionSize($space: 100vh) {
+    height: $space;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,6 +18,10 @@ html {
     font-family: "Noto Sans JP", sans-serif;
     line-height: 1.5rem;
     color: #333;
+
+    @include sp {
+        font-size: 100%;
+    }
 }
 
 img {
@@ -36,13 +46,13 @@ a {
     font-weight: normal;
     font-style: normal;
 
-    line-height: 2em;
+    margin-bottom: 50px;
     font-size: 2rem;
 }
 
 .wrapper {
     max-width: 980px;
-    padding: 0 5%;
+    padding: 0 10%;
     margin: 0 auto;
     text-align: center;
 }
@@ -71,27 +81,54 @@ a {
 /* aboutMe */
 #aboutMe {
     @include sectionSize;
+
+    li {
+        margin: 1em 0;
+    }
 }
 
 /* footer */
 #wrapperLink {
-    @include sectionSize;
+    @include sectionSize(90vh);
 
     h2 {
         margin-bottom: 60px;
+
+        @include sp {
+            margin-bottom: 50px;
+        }
     }
 
     #link {
+
         display: flex;
         justify-content: space-around;
+
+        @include sp {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
         li {
             width: 150px;
             padding: 30px;
             background-color: #fafafa;
             border-radius: 50%;
-
+            margin-right: 20px;
+            transition-property: opacity;
             transition-duration: 0.2s;
+
+            @include sp {
+                margin-right: 0;
+                margin-bottom: 50px;
+                width: 110px;
+                padding: 20px;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
 
             &:hover {
                 opacity: 0.5;
