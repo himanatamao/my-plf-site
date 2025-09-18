@@ -1,0 +1,133 @@
+/* var */
+/* common */
+html {
+  font-size: 140%;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.5rem;
+  color: #333;
+}
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.sectionTitle {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  margin-bottom: 50px;
+  font-size: 2rem;
+}
+
+.wrapper {
+  max-width: 980px;
+  padding: 0 10%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* siteTitle */
+#siteTitle {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4%;
+}
+
+/* welcome */
+#welcome {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#welcome #picture1 {
+  margin-top: 30px;
+}
+
+/* aboutMe */
+#aboutMe {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#aboutMe li {
+  margin: 1em 0;
+}
+
+/* footer */
+#wrapperLink {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#wrapperLink h2 {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 750px) {
+  #wrapperLink h2 {
+    margin-bottom: 50px;
+  }
+}
+#wrapperLink #link {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 750px) {
+  #wrapperLink #link {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#wrapperLink #link li {
+  width: 150px;
+  padding: 30px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  margin-right: 20px;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+}
+@media screen and (max-width: 750px) {
+  #wrapperLink #link li {
+    margin-right: 0;
+    margin-bottom: 50px;
+    width: 110px;
+    padding: 20px;
+  }
+}
+#wrapperLink #link li:last-child {
+  margin-right: 0;
+}
+#wrapperLink #link li:hover {
+  opacity: 0.5;
+}
+
+#copyRight {
+  font-size: 0.55rem;
+  opacity: 0.5;
+}/*# sourceMappingURL=style.css.map */

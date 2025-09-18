@@ -1,59 +1,89 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>暇人たまお 公式サイト</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="暇人たまおのプロフィールサイトです。">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>暇人たまお 公式サイト</title>
+
+    <!-- font -->
+    <!-- note sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+    <!-- source sans3 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <h1>暇人たまお 公式サイト</h1>
-  <div class="暇人たまお">
-    <img src="images\himajintamao.png">
-  </div>
-  <div class="公式サイト">
-    <img src="images\koushikisaito.png" alt="公式サイト">
-  </div>
-  <div>
-  <h2 class="WELCOME">
-    WELCOME TO MY OFFICIAL SITE!</h2>
-  <p class="皆さんこんにちは">
-    皆さんこんにちは、暇人たまおです。<br>
-    HTML・CSSの学習を始めて、その成果として<br>
-    この公式サイトを作りました。<br>
-    機能はまだまだ不十分ですが、僕のできることが増えれば<br>
-    このサイトはより面白いものになるかもしれません。
-  </p>
-    <div class="挿絵1">
-    <img src="images\sashie1.png" alt="挿絵1">
-    </div>
-  </div>
-  <div>
-    <h2 class="ABOUT"> ABOUT ME</h2>
-    <p class="自己紹介">
-    2025/07/25 現時点で14歳 中3<br><br>
-    愛媛県出身大阪府在住<br><br>
-    趣味 : 映像編集 Blender グラフィックデザイン<br><br>
-    座右の銘は「ええやん別に」「無いなら作る」<br><br>
-    あとアホ
-    </p>
-  </div>
-  <div>
-    <h2 class="LINKS">LINKS</h2>
-    <div class="リンク集">
-        <a target="_blank" href="https://www.youtube.com/@himajinn_tamao">
-        <img class="icon1" src="images\youtube.png" alt="Youtubeリンク">
-        </a>
-        <a target="_blank" href="https://x.com/himanatamao">
-          <img class="icon2" src="images\X.png" alt="Xリンク">
-        </a>
-        <a target="_blank" href="https://scratch.mit.edu/users/_T_A_M_A_O_/">
-          <img class="icon3" src="images\scratch.png" alt="scratchリンク">
-        </a>
-    </div>
-  </div>
-  <div class="コピーライト">
-    © 2025 暇人たまお
-  </div>
+    <main>
+        <!-- siteTitle -->
+        <div id="siteTitle">
+            <div><img src="images/himajintamao.png" alt="himaijntamao"></div>
+            <div><img src="images/officialSite.png" alt="officialSite"></div>
+        </div>
+
+        <!-- welcome -->
+        <section id="welcome" class="wrapper">
+            <h2 class="sectionTitle">WELCOME TO MY OFFICIAL SITE!</h2>
+            <p>皆さんこんにちは、暇人たまおです。<br>
+                HTML・CSSの学習を始めて、その成果として<br>
+                この公式サイトを作りました。<br>
+                機能はまだまだ不十分ですが、僕のできることが増えれば<br>
+                このサイトはより面白いものになるかもしれません。</p>
+
+            <div id="picture1">
+                <img src="images/picture1.png" alt="picture1">
+            </div>
+        </section>
+
+        <!-- aboutMe -->
+        <section id="aboutMe" class="wrapper">
+            <h2 class="sectionTitle">ABOUT ME</h2>
+            <ul>
+                <li>2025/07/25 現時点で14歳 中3</li>
+                <li>愛媛県出身 大阪府在住</li>
+                <li>趣味 : 映像編集 Blender グラフィックデザイン</li>
+                <li>座右の銘は「ええやん別に」「無いなら作る」</li>
+                <li>あたまわるい（笑）</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="wrapper">
+        <div id="wrapperLink">
+            <!-- link -->
+            <h2 class="sectionTitle">LINK</h2>
+            <ul id="link">
+                <li>
+                    <a target="_blank" href="https://scratch.mit.edu/users/_t_a_m_a_o_/">
+                        <img src="images/scratch.png" alt="scratchLink">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://x.com/himanatamao">
+                        <img src="images/x.png" alt="xLink">
+                    </a>
+                <li>
+                    <a target="_blank" href="https://www.youtube.com/@himajinn_tamao">
+                        <img src="images/youtube.png" alt="youtubeLink">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- copyRight -->
+        <p id="copyRight">&copy; 2025 himanatamao</p>
+    </footer>
 </body>
+
 </html>
