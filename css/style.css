@@ -48,4 +48,53 @@ a {
   justify-content: center;
   align-items: center;
   padding: 0 4%;
+}
+
+/* welcome */
+#welcome {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#welcome #picture1 {
+  margin-top: 30px;
+}
+
+/* aboutMe */
+#aboutMe {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* footer */
+#wrapperLink {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#wrapperLink h2 {
+  margin-bottom: 60px;
+}
+#wrapperLink #link {
+  display: flex;
+  justify-content: space-around;
+}
+#wrapperLink #link li {
+  width: 150px;
+  padding: 30px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+}
+#wrapperLink #link li:hover {
+  opacity: 0.5;
+}
+
+#copyRight {
+  font-size: 0.55rem;
+  opacity: 0.5;
 }/*# sourceMappingURL=style.css.map */

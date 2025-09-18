@@ -1,5 +1,10 @@
 /* var */
-$sectionSpace: 250px;
+@mixin sectionSize {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 /* common */
 html {
@@ -52,4 +57,50 @@ a {
     justify-content: center;
     align-items: center;
     padding: 0 4%;
+}
+
+/* welcome */
+#welcome {
+    @include sectionSize;
+
+    #picture1 {
+        margin-top: 30px;
+    }
+}
+
+/* aboutMe */
+#aboutMe {
+    @include sectionSize;
+}
+
+/* footer */
+#wrapperLink {
+    @include sectionSize;
+
+    h2 {
+        margin-bottom: 60px;
+    }
+
+    #link {
+        display: flex;
+        justify-content: space-around;
+
+        li {
+            width: 150px;
+            padding: 30px;
+            background-color: #fafafa;
+            border-radius: 50%;
+
+            transition-duration: 0.2s;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+#copyRight {
+    font-size: 0.55rem;
+    opacity: 0.5;
 }
